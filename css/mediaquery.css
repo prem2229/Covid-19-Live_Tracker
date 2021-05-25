@@ -1,0 +1,101 @@
+
+
+.map{
+    width:100vw;
+    height:240vh;
+    display:flex;
+    flex-direction: column;
+}
+.mapfile{
+    position: absolute;
+    right: 4vw;
+    top: 125vh;
+    margin:10px 10px;
+    width:38%;
+
+}
+.firstpage{
+
+    width:100%;
+    height:500px;
+
+}
+.hoverbox{
+    
+    visibility: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 21vh;
+    border-radius: 10px;
+    width: 19vw;
+    background-color:var(--secondarycolor);
+    top:0;
+    right: 0;
+    border: none; 
+    font-size: 1.2vw;
+
+}
+.tablehead p{
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:var(--secondarycolor);
+    border-radius: 5px;
+    transition: all 0.3s;
+
+}
+.tablestate p{
+
+    font-size: 1.2vw;
+    margin-top: 10px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:var(--secondarycolor);
+    border-radius: 5px;
+    transition: all 0.3s;
+
+}
+
+.bigboxitems{
+    border-radius: 5px;
+}
+.bigbox2items{
+    border-radius: 5px;
+}
+#worlddata{
+    border-radius: 5px;
+}
+#countrydata{
+    border-radius: 5px;
+}
+
+.twitter-timeline{
+    border-radius: 15px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:7vh;
+    padding:3vh;
+    width:102%;
+    height:6vh;
+    color:white;
+    background-color:  #0d0d16;
+}
+.tablehead{
+    top:62px;
+ }
+ 

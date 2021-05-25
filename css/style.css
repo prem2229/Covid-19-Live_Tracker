@@ -1,0 +1,643 @@
+
+:root{
+    --bodycolor: #c9dff8;
+    --secondarycolor: rgb(119, 156, 230);
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height:2000px;
+    background-color:var(--bodycolor);
+    
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+#start{
+    position: absolute;
+    top:0px;
+}
+#precautions{
+    height:8vh;
+}
+#statewise{
+    height:10vh;
+}
+#mainheading{
+    position: absolute;
+    left:1vw;
+    
+    margin:0px;
+    font-size: 0.8vw;
+    width:9vw;
+   text-align: center;
+    
+}
+#mainheading2 a{
+    text-decoration: none;
+    color: white;
+}
+#mainheading2 a:active{
+    color: white;
+}
+#mainheading2{
+    position: absolute;
+    right:1vw;
+    
+    margin:0px;
+    font-size: 0.8vw;
+    width:9vw;
+   text-align: center;
+    
+}
+/* NAVIGATION BAR */
+.nav{
+    display: block;
+    position: fixed;
+    height:9vh;
+    top:0px;
+    width:100vw;
+    color:white;
+    background-color:var(--secondarycolor);
+   z-index:2;
+ transition: all 0.3s;   
+ overflow: hidden;
+}
+.nav:hover{
+    background-color:rgb(86, 126, 204);
+}
+
+.navitems{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 9vh;
+}
+.navlinks{
+    font-weight: 500;
+    text-decoration: none;
+    
+    color:white;
+    padding:2vw;
+    font-size: 1.3vw;
+    transition: color 0.4s ;
+
+}
+.navlinks:active{
+    color:rgb(20, 20, 20);
+   
+
+}
+.item{
+    margin: 3px 50px;
+    padding: 24px 20px;
+    transition: all 0.4s ;
+}
+.item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.12);
+}
+.itemz{
+    padding: 10px 10px;
+}
+.itemz2{
+    padding: 10px 10px;
+}
+
+/* TWITTER FEED */
+.news{
+    height:72vh;
+    width:25vw;
+    position: absolute;
+    top:18vh;
+    left:71vw;
+    
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.news:hover{
+transform: scale(1.03);
+}
+.twitter-timeline{
+    border-radius: 5px;
+    
+}
+/* MAIN PAGE */
+.firstpage{
+    
+    width:100%;
+    height:80vh;
+    
+}
+.totalfigures{
+    margin: 21vh 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+}
+#countrydata{
+    height:9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+
+    margin-left: 1vw;
+    margin-bottom: 3vw;
+    
+    
+    text-align: center;
+    top: 10vh;
+    left: 2vw;
+    width:31vw;
+    font-size: 2.2vw;
+    transition: all 0.3s;
+    border-radius: 10px;
+    background-color:var(--secondarycolor);
+}
+#countrydata:hover{
+    background-color:rgb(86, 126, 204);
+}
+#worlddata{
+    height:9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin-left: 1vw;
+    margin-bottom: 3vw;
+    text-align: center;
+    top: 10vh;
+    right:68vh;
+    width:31vw;
+    font-size: 2.2vw;
+    transition: all 0.3s;
+    border-radius: 10px;
+    background-color:var(--secondarycolor);
+}
+#worlddata:hover{
+    background-color:rgb(86, 126, 204);
+}
+.cases{
+    text-align: center;
+    margin:15px;
+    padding:10px;
+    
+}
+/* INDIA STATISTICS */
+#bigbox{
+    font-weight: lighter;
+       display:flex;
+       flex-direction: column;
+       width:31vw;
+       height:48vh;
+       margin:0vw 1vw;
+    border-radius: 10px;
+    transition: all 0.4s;
+    
+    
+    
+}
+.bigboxitems{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width:29vw;
+    height:10vh;
+    background-color: white;
+    margin: 0.5vh 0vw;
+    padding:1vh 1vw;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.bigboxitems:hover{
+    transform:scale(1.07);
+}
+.bigboxitems h1{
+    width:100%;
+    text-align: left;
+    font-size: 1.9vw;
+}
+
+
+.figures{
+    font-weight: 00;
+    margin:5px;
+    width:100%;
+    padding:5px;
+    text-align: right;
+    color: white;
+    font-size: 1.7vw;
+}
+#total{
+    font-size: 1vw;
+    font-weight: 600;
+    color:#ff073a;
+text-align: center;
+background-color:rgb(255, 7, 58, 0.3);
+}
+#active{
+    font-size: 1vw;
+    font-weight: 600;
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.3);
+text-align: center;
+}
+#recovered{
+    font-size: 1vw;
+    font-weight: 600;
+color:rgb(0, 184, 0);
+background-color: rgba(159, 255, 151, 0.5);
+text-align: center;
+}
+#death{
+    font-size: 1vw;
+    font-weight: 600;
+    color:rgb(146, 145, 145);
+    background-color:rgb(146, 145, 145, 0.2);
+text-align: center;
+}
+
+#activefig{
+    color: #007bff;
+}
+#totalfig{
+    color:#ff073a;
+}
+#recoveredfig{
+    color:rgb(0, 184, 0);
+}
+#deathfig{
+ color:rgb(146, 145, 145);
+}
+/* WORLD STATISTICS */
+#bigbox2{
+    font-weight: lighter;
+       display:flex;
+       flex-direction: column;
+       width:31vw;
+       height:48vh;
+       margin:0vw 1vw;
+    border-radius: 10px;
+    transition: all 0.4s;
+    
+    
+    
+}
+.bigbox2items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width:29vw;
+    height:10vh;
+    background-color: white;
+    margin: 0.5vh 0vw;
+    padding:1vh 1vw;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.bigbox2items:hover{
+    transform:scale(1.07);
+}
+.bigbox2items h1{
+    width:100%;
+    text-align: left;
+    font-size: 1.9vw;
+}
+
+
+.figures2{
+    font-weight: 600;
+    margin:5px;
+    width:100%;
+    padding:5px;
+    text-align: right;
+    color: white;
+    font-size: 1.7vw;
+}
+#total2{
+    font-size: 1vw;
+    font-weight: 600;
+    color:#ff073a;
+text-align: center;
+background-color:rgb(255, 7, 58, 0.3);
+}
+#active2{
+    font-size: 1vw;
+    font-weight: 600;
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.3);
+text-align: center;
+}
+#recovered2{
+    font-size: 1vw;
+    font-weight: 600;
+color:rgb(0, 184, 0);
+background-color: rgba(159, 255, 151, 0.5);
+text-align: center;
+}
+#death2{
+    font-size: 1vw;
+    font-weight: 600;
+    color:rgb(146, 145, 145);
+    background-color:rgb(146, 145, 145, 0.2);
+text-align: center;
+}
+
+#activefig2{
+    color: #007bff;
+}
+#totalfig2{
+    color:#ff073a;
+}
+#recoveredfig2{
+    color:rgb(0, 184, 0);
+}
+#deathfig2{
+ color:rgb(146, 145, 145);
+}
+.class1{
+    border:2px solid white;
+}
+.map{
+    width:100vw;
+    height:230vh;
+    display:flex;
+    flex-direction: column;
+}
+.mapfile{
+    position: absolute;
+    right: 1vw;
+    top: 125vh;
+    margin: 1vw 1vw;
+    width:40%;
+    
+}
+.mapfile path{
+    fill: rgba(0, 123, 255, 0.11);
+    stroke:rgb(0, 93, 192);
+    stroke-width:0.9;
+   
+}
+.mapfile :hover{
+    fill: rgba(255, 255, 255);
+    
+}
+.maphead{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:8vh;
+    margin-bottom:8vh;
+    padding:1vh 1vh;
+    
+    background-color:var(--secondarycolor);
+    opacity:1;
+    transition: all 0.3s;
+}
+.maphead:hover{
+    background-color:rgb(86, 126, 204);
+}
+#headingmap{
+    color:white;
+    font-size: 2.5vw;
+    font-weight: lighter;
+    
+}
+/* table for the stats */
+
+
+.stattable{
+    color: white;
+   
+   
+}
+.tablehead{
+   position: sticky;
+   top:95px;
+   z-index: 1;
+   
+   
+}
+.tablehead p{
+    font-size: 2vw;
+    text-align: center;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color:var(--secondarycolor);
+    border-radius: 10px;
+    transition: all 0.3s;
+    
+   
+}
+.tablestate p{
+    font-size: 1.2vw;
+    margin-top: 10px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color:var(--secondarycolor);
+    border-radius: 7px;
+    transition: all 0.3s;
+   
+}
+.tablestate p:hover{
+    background-color:rgb(255, 255, 255);
+    color:#405377;
+}
+.tablehead p:hover{
+    background-color:rgb(252, 252, 252);
+    
+}
+.tableconf{
+    
+    color:#ff073a;
+}
+
+.tableactive{
+    color: #0068d6;
+}
+.tablerecovered{
+    color:rgb(0, 255, 0);
+}
+.tabledeath{
+    color:rgb(92, 92, 92);
+}
+.tablestates{
+    
+    color: rgb(255, 238, 0);
+}
+
+/* BOXES CSS */
+
+.hoverbox{
+    
+    display:flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 30vh;
+    border-radius: 10px;
+    width: 19vw;
+    background-color:rgb(149, 179, 238);
+    top: 0;
+    right: 0;
+    border: none; 
+    font-size: 1.2vw;
+    padding: 1vh;
+}
+
+#hoverheading{
+    
+    font-weight: 600;
+    padding: 0.5vw;
+    color: rgb(255, 238, 0);
+}
+#hovercount{
+    font-weight: lighter;
+    padding: 0.2vw;
+    color:#ff073a;
+}
+#hoveractive{
+    font-weight: lighter;
+    padding: 0.2vw;
+    color: #007bff;
+
+}
+#hoverrecovered{
+    font-weight: lighter;
+    padding: 0.2vw;
+    color:rgb(0, 255, 0);
+}
+#hoverdeath{
+    font-weight: lighter;
+    padding: 0.2vw;
+    color:rgb(92, 92, 92);
+
+}
+.precautions{
+    width:100vw;
+    height:180vh;
+    color:white;
+}
+.section-heading{
+    width:100vw;
+    display:flex;
+    font-size: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    height:8vh;
+    
+    padding:1vh 1vh;
+    margin: 2vh 0vh;
+    
+    background-color:var(--secondarycolor);
+    opacity:1;
+    transition: all 0.3s;
+}
+.section-heading:hover{
+    background-color:rgb(86, 126, 204);
+}
+.section-data{
+    font-size: 1.1vw;
+    padding:2vh 2vh;
+    margin: 2vh 2vh;
+    color:#405377;
+    
+}
+.anchor{
+    color:#33425f;
+}
+.india{
+    display: flex;
+    flex-direction: column;
+    
+}
+.world
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.aboutus{
+    width: 100%;
+    height:100vh;
+}
+#aboutus{
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:8vh;
+    margin-bottom:2vh;
+    padding:1vh 1vh;
+   
+    background-color:var(--secondarycolor);
+    opacity:1;
+    transition: all 0.3s;
+    
+}
+#aboutus h2{
+    color:white;
+    font-size: 2vw;
+    font-weight: lighter;
+}
+#aboutus:hover{
+    background-color:rgb(86, 126, 204);
+}
+.Aboutus{
+    color:#405377;
+    text-align: center;
+    font-size: 1.5vw;
+    
+}
+.aboutusinfo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nameandicon{
+    margin:2vw;
+    font-size: 1.5vw;
+    height:10vh;
+    width:20vw;
+    
+}
+.nameandicon a{
+    text-decoration: none;
+}
+.logo{
+    height:50px;
+    width:50px;
+}
+.namehead{
+    margin: 2vh;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:7vh;
+    width:102%;
+    height:9vh;
+    color:white;
+    background-color:  #0d0d16;
+}
+
+.footer h3{
+    margin-top: 2vh;
+}
